@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title>team-A honey trap</title>
+		<link rel="stylesheet" href="./css/style.css" media="all">
+
+        <style>
+.header {
+	background-image: url("image/9f3afed0.jpg");
+}
+		</style>
+        
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+
+$(function () {
+	var $jsBlogMenuChild = $('.side-menu__li'),
+		$body = $('body');
+	//blog side menu
+	$jsBlogMenuChild.on('click', function () {
+		$(this).toggleClass('active');
+	});
+	//menu btn
+	$('#js__sideMenuBtn').on('click', function () {
+		$body.toggleClass('side-open');
+		$('#js__overlay').on('click', function () {
+			$body.removeClass('side-open');
+		});
+	});
+});
+		</script>
+	</head>
+	<body>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-48544050-1', 'auto');
+		ga('send', 'pageview');
+		</script>
+		<div class="overlay" id="js__overlay"></div>
+		<nav class="side-menu" id="js__sideMenu">
+            <ul class="side-menu__ul">
+				<li class="side-menu__li">
+					<h2>home</h2>
+					<ul class="side-menu__ul--child">
+						<li><a href="index.html#abstract">abstract</a></li>
+						<li><a href="index.html#youtube">youtube</a></li>
+					</ul>
+				</li>
+                <li><a href="background.html">background</a></li>
+                <li><a href="project%20idea.html">project idea</a></li>
+				<li class="side-menu__li">
+					<h2>purpose</h2>
+					<ul class="side-menu__ul--child">
+						<li><a href="purpose.html">purpose</a></li>
+					</ul>
+				</li>
+                <li><a href="method.html">method</a></li>
+				<li class="side-menu__li">
+					<h2>simulation</h2>
+					<ul class="side-menu__ul--child">
+						<li><a href="simulation.html">simulation</a></li>
+					</ul>
+				</li>
+                <li><a href="conclusion.html">conclusion</a></li>
+                <li><a href="discussion.html">discussion</a></li>
+                <li><a href="future.html">future</a></li>
+                <li><a href="ELSI.html">ELSI</a></li>
+				<li class="side-menu__li">
+					<h2>team</h2>
+					<ul class="side-menu__ul--child">
+						<li><a href="#"></a></li>
+						<li><a href="team.html">member</a></li>
+					</ul>
+				</li>
+            </ul>
+		</nav>
+
+		<div class="side-menu-btn" id="js__sideMenuBtn">
+			<div class="ellipsis-v">
+				<span class="point top"></span>
+				<span class="point mid"></span>
+				<span class="point bot"></span>
+			</div>
+		</div>
+
+		<div class="wrapper">
+
+			<header class="header">
+				<h>method</h>
+				<p></p>
+			</header>
+
+			<main class="contents">
+				<section class="contents__inner">
+					<h1>method</h1>
+					<p></p>
+					<p class="btn__box">
+					</p>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<p>ここはFooter</p>
+			</footer>
+
+		</div><!-- /.wrapper -->
+
+	</body>
+</html>
